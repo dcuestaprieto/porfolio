@@ -1,6 +1,7 @@
 ---
 import Header from '../components/Header.astro';
 import FloatingIcons from '../components/FloatingIcons.astro';
+import '../styles/global.css'
 
 interface Props {
 	title: string;
@@ -32,12 +33,4 @@ const prueba = [
 			<slot />
 		</main>
 	</body>
-	<style>
-		body{
-			background-image: url("/fondo.jpeg");
-			background-position: center;
-			background-size: cover;
-			margin: 0;
-		}
-	</style>
 </html>

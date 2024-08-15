@@ -3,5 +3,81 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title='Porfolio Diego Cuesta'>
-
+    <section id="sectionInicio">
+        <div class="content-boxed">
+            <img id="fotoCurriculum" src="/foto_diego.webp" alt="Foto Diego Cuesta">
+            <h3>¡Hola! Me llamo Diego Cuesta y soy programador</h3>
+            <p>Graduado en Desarrollo de aplicaciones Multiplataforma y
+                Administración de Sistemas Informáticos en Red.
+                En mis cuatro años de formación, he adquirido conocimientos en
+                maquetación web y programación en Java, JavaScript y PHP.
+                Me gusta estar en constante aprendizaje de nuevos conocimientos
+                en todo lo relacionado con la programación y estoy deseando
+                poder demostrar mi compromiso con la excelencia profesional.
+            </p>
+            <h3>¿Y qué es lo que he hecho durante estos años de formación?</h3>
+            <h3>¡DESCUBRÁMOSLO!</h3>
+            <p id="flechas">⇊</p>
+        </div>
+    </section>
 </Layout>
+<style>
+    body{
+        background-image: url("/fondo.jpeg");
+        background-position: center;
+        background-size: cover;
+        margin: 0;
+    }
+img{
+    max-width: 100%;
+    width: 100%;
+}
+
+.content-boxed {
+    width: 1150px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+#sectionInicio{
+    height: 100vh;
+    /* background-image: url("../img/fondo.jpeg");
+    background-position: center;
+    background-size: cover; */
+    color: #fff;
+}
+
+#sectionInicio .content-boxed{
+    padding-top: 70px;
+}
+
+#fotoCurriculum{
+    max-width: 100%;
+    width: 180px;
+    border: 7px white solid;
+    padding: 5px;
+    border-radius: 100%;
+}
+
+#sectionInicio h3{
+    font-size: 25px;
+}
+#sectionInicio p{
+    font-size: 20px;
+}
+
+#flechas{
+    text-align: center;
+    animation: bajar 2s ease 0s infinite normal forwards;
+}
+
+@keyframes bajar {
+	50% {
+		transform: translateY(24px);
+	}
+
+	100% {
+		transform: translateY(0px);
+	}
+}
+</style>
